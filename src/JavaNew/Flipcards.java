@@ -1,4 +1,4 @@
-package JavaNew;
+import java.util.*;
 public class Flipcards 
 {
 	static int MaximumMarks(int m,int[] p,int n)
@@ -25,22 +25,21 @@ public class Flipcards
 			    count=j%p[i];
 			    while(count < 100)
 				{					
-//					if(sum >= 100)
-//					{
-//						break;
-//					}
+					if(sum >= 100)
+					{
+						break;
+					}
 					temp[sum]=card[count];
 					count=count+p[i];
 					sum++;					
 				}
 			}
-			
+			card=temp;
 			for(int z=0;z<100;z++)
 			{
-				card[z]=temp[z];
-				System.out.print(" "+card[z]);
+			   System.out.print(" "+card[z]);
 			}
-			System.out.println(" ======= ");
+			System.out.println("==================================================================================================================");
 		}
 		
 		return card[n-1];
@@ -48,7 +47,12 @@ public class Flipcards
 	 public static void main (String[] args)  
     {
         int m=2, n=4;
-		int[] p = {10,10};
+		int[] p = {2,2};
         System.out.println(MaximumMarks(m,p,n)); 
     }
 }
+
+/* Appraisal IOU
+IS-BFSI-US West-Parent
+Appraisal Unit
+IS-BFSI-US West 1.3-Group3(BFSI-US West_013) */
