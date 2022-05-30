@@ -7,6 +7,7 @@ public abstract class AA  {
 		return "Gopi Reddy";
 		
 	}
+	
 	public  String getStrings()
 	{
 		return "I'm in AA";
