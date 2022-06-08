@@ -1,4 +1,4 @@
-
+package leetcode;
 public interface Gopi {
 
 	private static int sum(int a,int b)
